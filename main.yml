@@ -1,0 +1,13 @@
+# main.yml
+---
+
+- name: Setup a Kubernetes Solo environment
+  hosts: all
+
+  #tasks:
+  #  - name: Print ansible_local
+  #    debug:
+  #      var: hostvars[inventory_hostname]
+
+  roles:
+    - tandiljuan.kubernetes_solo
